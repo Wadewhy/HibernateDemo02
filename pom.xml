@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>xyz.wadewhy.HibernateDemo01</groupId>
+	<artifactId>HibernateDemo01</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	 <properties>
+        <!-- hibernate版本号 -->
+        <hibernate.version>5.1.5.Final</hibernate.version>
+    </properties>
+  <dependencies>
+        <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.8.2</version>
+          <scope>test</scope>
+        </dependency>
+          <!-- mysql驱动包 -->
+        <dependency>
+           <groupId>mysql</groupId>
+           <artifactId>mysql-connector-java</artifactId>
+           <version>5.1.29</version>
+        </dependency>
+        <!-- hibernate核心jar包 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- hibernate注解 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-annotations</artifactId>
+            <version>3.5.0-Final</version>
+        </dependency>
+        <!-- Javassist是一款字节码编辑工具 -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.21.0-GA</version>
+        </dependency>
+        <!-- Antlr 是一个基于 Java 开发的功能强大的语言识别工具 -->
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.6</version>
+        </dependency>
+        <!-- commons-collections 为Java标准的Collections API提供了相当好的补充 -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        <!-- dom4j是一个Java的XML API -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <!-- 
+            1、ORM映射元数据
+            2、JPA 的API
+                用来操作实体对象，执行CRUD操作，框架在后台替我们完成所有的事情，开发者从繁琐的JDBC和SQL代码中解
+                脱出来。
+            3、查询语言 
+        -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+  </dependencies>
+    <build>
+        <finalName>maven-hibernate-demo</finalName>
+    </build>
+
+</project>
